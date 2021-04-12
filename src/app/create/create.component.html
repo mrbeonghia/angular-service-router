@@ -1,0 +1,8 @@
+<p>create works!</p>
+<form (ngSubmit)="createProduct()">
+  <label>Name</label>
+  <input name = "name" type="text" [(ngModel)]="product.name">
+  <label>Description</label>
+  <input name = "name" type="text" [(ngModel)]="product.description">
+  <button type="submit" >Create new Product</button>
+</form>

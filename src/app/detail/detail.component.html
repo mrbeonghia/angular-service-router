@@ -1,0 +1,6 @@
+<p>detail product!</p>
+<form (ngSubmit)="updateProduct()">
+  <input type="text" name="name" [(ngModel)]="product.name">
+  <input type="text" name="descripton" [(ngModel)]="product.description">
+  <input type="submit" value="Edit">
+</form>

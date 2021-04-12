@@ -1,0 +1,18 @@
+<p>list products!</p>
+<a [routerLink]="'create'">Create</a>
+<table>
+  <tr>
+    <td>name</td>
+    <td>description</td>
+    <td>detail</td>
+
+  </tr>
+  <tr *ngFor="let p of products">
+    <td>{{p.name}}</td>
+    <td>{{p.description}}</td>
+    <td>
+      <a [routerLink]="'detail/'+p.id">Detail</a>
+    </td>
+  </tr>
+</table>
+
