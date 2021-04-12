@@ -5,7 +5,7 @@
     <td>name</td>
     <td>description</td>
     <td>detail</td>
-
+    <td>delete</td>
   </tr>
   <tr *ngFor="let p of products">
     <td>{{p.name}}</td>
@@ -13,6 +13,7 @@
     <td>
       <a [routerLink]="'detail/'+p.id">Detail</a>
     </td>
+    <td><button (click)="deleteProduct(p.id)">delete</button></td>
   </tr>
 </table>
 
